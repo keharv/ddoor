@@ -43,7 +43,7 @@ $ ./payload_manager.py -h
 usage: payload_manager.py [-h] [-l LINUX_CMD] [-w WINDOWS_CMD]
                           [-d DOMAIN_SEARCH]
 
-ddor, crossplatform dns backdoor
+ddoor, crossplatform dns backdoor
 
 optional arguments:
   -h, --help        show this help message and exit

