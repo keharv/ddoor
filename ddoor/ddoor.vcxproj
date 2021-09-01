@@ -155,6 +155,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="crypto.cpp" />
+    <ClCompile Include="doh_query.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="dns_query.cpp" />
     <ClCompile Include="process_commands.cpp">
@@ -166,6 +167,8 @@
     <ClInclude Include="config.h" />
     <ClInclude Include="crypto.h" />
     <ClInclude Include="dns_query.h" />
+    <ClInclude Include="doh_query.h" />
+    <ClInclude Include="httplib.h" />
     <ClInclude Include="process_commands.h" />
     <ClInclude Include="startup.h" />
   </ItemGroup>
