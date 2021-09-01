@@ -65,12 +65,12 @@ string doh_query::get_txt_results(void) {
 
 
 	if (!records.empty()) {
-			string record = records.back();
-			records.pop_back();
-			record = c.xor_operation(c.hex_decode(record), xor_pass);
-			if (!record.empty() && is_correct_header(record)) {
-				return record;
-			}
+		string record = records.back();
+		records.pop_back();
+		record = c.xor_operation(c.hex_decode(record), xor_pass);
+		if (!record.empty() && is_correct_header(record)) {
+			return record;
+		}
 	}
 
 	return string();
