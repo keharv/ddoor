@@ -7,7 +7,7 @@
 #define MAGIC_HEADER "2163" // OPTIONAL TO CHANGE!! decoded to !c
 #define USE_DOH 0
 
-std::vector <std::string> doh_resolver = {
+std::vector <std::string> doh_resolvers = {
 	"1.1.1.1"
 };
 
