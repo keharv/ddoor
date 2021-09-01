@@ -15,7 +15,7 @@ ddor is a cross platform light weight backdoor that uses txt records to execute 
 + Tries to set GUID/UID to 0 (root)
 #### Windows Features:
 + Hides Console Window
-+ Stub Size of around 20kb
++ Stub Size of around 700kb
 ## Installation
 To install the dependencies needed for the python generation script run.
 ```bash
