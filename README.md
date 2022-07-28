@@ -51,4 +51,5 @@ optional arguments:
   -l LINUX_CMD      Linux Command
   -w WINDOWS_CMD    Windows Command
   -d DOMAIN_SEARCH  Domain to Check Commands On
+
   ```
